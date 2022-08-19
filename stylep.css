@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--text-color);
+}
+
+:root {
+    --body-bg-color: #22212C;
+    --text-color: #837E9F;
+    --bg-cards: #302F3D;
+    --bg-techs: #00C8A1;
+    --border-pfp: #B796FF;
+}
+
+body {
+    font-family: 'Merriweather Sans', sans-serif;
+    background-color: var(--body-bg-color);
+    padding: 1rem;
+    display: flex;
+}
+
+div.two {
+    width: 100%;
+}
+  
+div.card {
+    background-color: var(--bg-cards);
+    border-radius: 1rem;
+    margin: 1.5rem;
+    padding: 2rem;
+    box-shadow: 0.125rem 0.125rem 0.125rem 0.0625rem rgba(0, 0, 0, 0.2);
+}
+
+div.card#main {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+img.pfp {
+    border-radius: 50%;
+    border: 0.125rem solid var(--border-pfp);
+    width: 8rem;
+}
+
+h1 {
+    font-size: 1.4375rem;
+    font-weight: 700;
+}
+
+h1.cmpltname {
+    margin: 1.875rem 0 0.625rem;
+}
+
+p.profession {
+    font-size: 0.8125;
+    font-weight: 300;
+}
+
+h2 {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+div.card#externallinks {
+    padding: 0.9375rem 2.5rem;
+}
+
+ul.externallinks {
+    font-weight: 400;
+    font-size: 0.75rem;
+}
+
+ul.externallinks>li {
+    margin: 0.625rem;
+    display: flex;
+    align-items: center;
+
+}
+
+ul.externallinks>li>svg {
+    margin-right: 1.25rem;
+}
+
+div.card#technologies {
+    display: flex;
+    flex-direction: column;
+}
+
+ul.technologies {
+    display: grid;
+    grid-template-areas: 
+    "li li li"
+    "li li li"
+    "li li li";
+    grid-template-columns: 33%;
+    gap: 0.9375rem;
+    margin-top: 1.25rem;
+}
+
+ul.technologies>li {
+    background-color: var(--bg-techs);
+    color: #000;
+    font-size: 0.625rem;
+    font-weight: 700;
+    border-radius: 1.875rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    padding: 0.375rem;
+}
+
+ul.experiences {
+    margin-top: 1.25rem;
+}
+
+ul.experiences>li {
+    margin: 0.5rem 1rem;
+    font-weight: 700;
+    font-size: 0.875rem;
+}
+
+span.date {
+    font-weight: 300;
+    font-size: 0.75rem;
+}
+
+span.profession {
+    font-weight: 400;
+    font-size: 0.75rem;
+}
+
+ul.education {
+    margin-top: 1.25rem;
+}
+
+ul.education>li {
+    margin: 0.5rem 1rem;
+    font-weight: 700;
+    font-size: 0.875rem;
+}
+
+span.course {
+    font-weight: 400;
+    font-size: 0.75rem;
+}
+
+
+div.card#myprojects {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+div.card#myprojects>h1 {
+    font-size: 1.25rem;
+}
+
+span.seeall  {
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+
+div.userposts {
+    display: grid;
+    grid-template-areas: 
+    "1 1";
+}
+
+h2.posttitle {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 1.375rem;
+}
+
+h2>svg {
+    margin-right: 1rem;
+}
+
+p.postdescription {
+    margin-bottom: 1.6875rem;
+    line-height: 1.25rem;
+    font-weight: 400;
+    font-size: 0.875rem;
+}
+
+div.postinformation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.875rem;
+}
+
+span.numbers {
+    display: flex;
+    align-items: center;
+}
+
+span.number1,.number2 {
+    margin-right: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+span.number1>svg,.number2>svg {
+    margin-right: 0.5rem;
+}
+
+span.technology {
+    display: flex;
+    align-items: center;
+}
+
+span.technology>svg {
+    margin-right: 0.5rem;
+}
+
+div.card#recentposts {
+    margin-top: 0;
+}
+
+div.card#recentpost1 {
+    display: flex;
+}
+
+div.recentpostcontent {
+    margin-left: 1.25rem;
+    display: flex;
+    flex-direction: column;
+}
+
+div.recentpostcontent>h2 {
+    font-size: 1.125rem;
+    margin-bottom: 0.5625rem;
+}
+
+span.datepost {
+    font-weight: 400;
+    font-size: 0.875rem;
+    margin-bottom: 1.75rem;
+}
+
+span.descriptionpost {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 0.6875rem;
+}
+
+span.hashtags {
+    font-weight: 400;
+    font-size: 0.875rem;
+    display: flex;
+    justify-content: space-between;
+}
